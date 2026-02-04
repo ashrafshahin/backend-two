@@ -1,0 +1,2 @@
+EADDRINUSE meaning
+"Error ADDRess IN USE". It is a standard network error that occurs when a program attempts to bind a socket to a network address (IP address and port number combination) that is already being used by another process or application
