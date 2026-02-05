@@ -10,10 +10,14 @@ app.post("/registration", (req, res) => {
     
     // conditional validation with error message and status work
     const errors = []
-    // const successStatus = 201
-    // const statusCode = success === 201 ? 201 : 401;
-    // const statusCode = (code === 201) ? "Success" : "Failure";
-    // const status = (code == 201 && code < 401) ? "Success" : "Failure";
+    const successStatus = 201
+    if (!successStatus) {
+        errors.push({
+            errorType: 'successStatus',
+            message: 'Server Error...',
+        })
+    }
+    
 
     if (!username) {
         errors.push({
@@ -34,7 +38,7 @@ app.post("/registration", (req, res) => {
         })
     }
 
-    res.status(201).send({
+    res.status(successStatus).send({
         success: errors.length == 0 ? true : false,
         errors: errors.length == 0 ? null : errors,
         message: errors.length == 0 ? "Registration Successful" : "Registration Failed",
