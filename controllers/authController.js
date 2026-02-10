@@ -17,7 +17,7 @@ const registrationController = (req, res) => {
     if (!username) {
         errors.push({
             errorType: 'username',
-            message: 'username required',
+            message: 'username required llll',
         })
     }
     if (!email) {
@@ -29,7 +29,7 @@ const registrationController = (req, res) => {
     if (!password) {
         errors.push({
             errorType: 'password',
-            message: 'password required'
+            message: 'password required here'
         })
     }
 
@@ -42,4 +42,4 @@ const registrationController = (req, res) => {
 }
 // {} 2nd bracket deye OBJECT akare pathano hoi... import object akare hobe...
 
-module.exports = {registrationController}
+module.exports = { registrationController }

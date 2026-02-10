@@ -7,7 +7,7 @@ app.use(express.json())
 app.post("/registration", (req, res) => {
     // require.bode te sob data thakbe, destructure kora hoise
     const { username, email, password } = req.body
-    
+
     // conditional validation with error message and status work
     const errors = []
     // const successStatus = 201
@@ -17,8 +17,8 @@ app.post("/registration", (req, res) => {
 
     if (!username) {
         errors.push({
-            errorType : 'username',
-            message : 'username required',
+            errorType: 'username',
+            message: 'username required yes',
         })
     }
     if (!email) {
@@ -30,7 +30,7 @@ app.post("/registration", (req, res) => {
     if (!password) {
         errors.push({
             errorType: 'password',
-            message : 'password required'
+            message: 'password required'
         })
     }
 
@@ -44,7 +44,7 @@ app.post("/registration", (req, res) => {
 
 app.listen(8000, () => {
     console.log("Server running successfully");
-    
+
 })
 
 

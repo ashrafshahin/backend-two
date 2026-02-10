@@ -1,0 +1,19 @@
+Databse Connection Steps:
+
+1. Mongodb te login korte hobe
+2. cluster create korte hobe but age theke jodi cluster create kora theke tahole create korte hobe na
+3. databse create korar jonne cluster e jeye brows collection e click korte hobe
+4. brows collection e click korar pore cluster0 likha pabop left bar e
+5. clister 0 er pase akta + sign thakbe sekhane click korle akta popup asbe
+6. popup er moddhe amra db name and collection name diye create databse button e click korbo
+7. button e click korar pore databse create hoye jabe and databse ta amra dekhte parbo cluster 0 er vitore
+8. er por amra chole jabo left bar option gulo te jekhane niche likha pabo databse and network access.
+9. databse and network access er vitore jawer pore amra select korbo database user
+10. database user theke amra add user button e click kore username password and role set kore akta user create korbo
+11. tarpor chole jabo amara ip access list e sekhan theke add ip button click kore amra curretn ip othoba all access ip (0.0.0.0/0) diye dibo
+12. tar por amara abar cluster e jabo sekhan theke connect e click korboi then akta popup asbe popup theke amra drive e click kore database connection link copy kore nibo
+13. database copnnection url e amader 3ta jinis dite hobe username, password and databse name
+
+
+[note: Replace <db_password> with the password for the <db_username> database user. Ensure any option params are URL encoded]
+
